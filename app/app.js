@@ -1,6 +1,6 @@
 'use strict';
 
-var meetAngularBlog = angular.module('meetAngular', [
+var meetAngular = angular.module('meetAngular', [
     'meetAngularHome',
     'meetAngularAbout',
     'meetAngularBlog',
@@ -9,3 +9,10 @@ var meetAngularBlog = angular.module('meetAngular', [
     'meetAngularBlogCategory',
     'ngRoute'
 ]);
+
+meetAngular.controller('MenuController', function($scope, $location) {
+    $scope.menuClass = function(page) {
+        var current = $location.path().substring(1);
+        return page === current ? "active" : "";
+    };
+});
