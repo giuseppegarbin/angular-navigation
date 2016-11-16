@@ -1,0 +1,21 @@
+{
+  "name": "angular-navigation",
+  "version": "1.0.0",
+  "description": "Navigare tra le view di Angular Js",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Giuseppe Garbin",
+  "license": "MIT"
+}

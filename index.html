@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it" ng-app="meetAngular">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular JS & Bootstrap</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+</head>
+<body>
+
+<ul class="nav nav-pills">
+    <li><a href="#!/home">Home</a></li>
+    <li><a href="#!/about">About</a></li>
+    <li><a href="#!/blog">Blog</a></li>
+    <li><a href="#!/categorie">Categorie</a></li>
+</ul>
+
+<div ng-view></div>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- App files -->
+<script src="app/app.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/home/home.module.js"></script>
+<script src="app/about/about.module.js"></script>
+<script src="app/blog/blog.module.js"></script>
+<script src="app/blog-post/blog-post.module.js"></script>
+<script src="app/blog-categories/blog-categories.module.js"></script>
+<script src="app/blog-category/blog-category.module.js"></script>
+
+
+</body>
+</html>
